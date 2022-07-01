@@ -1,12 +1,15 @@
 import React from "react";
-import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
+import { View } from "react-native";
 import Header from "../../components/header/Header";
+import ProfilePicture from "../../components/profilePicture/ProfilePicture";
+import Story from "../../components/storys/Story";
 
 const HomeScreen = () => {
   return (
-    <>
+    <View>
       <Header />
-    </>
+      <Story />
+    </View>
   );
 };
 

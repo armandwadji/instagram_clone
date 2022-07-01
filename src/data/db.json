@@ -1,0 +1,34 @@
+{
+    "User": [
+        {
+            "name": "Shaki",
+            "img": "https://picsum.photos/200/300",
+            "id": 1
+        },
+        {
+            "name": "Ophelie",
+            "img": "https://picsum.photos/200/300",
+            "id": 2
+        },
+        {
+            "name": "Giulia",
+            "img": "https://picsum.photos/200/300",
+            "id": 3
+        },
+        {
+            "name": "Manou",
+            "img": "https://picsum.photos/200/300",
+            "id": 4
+        },
+        {
+            "name": "Lass",
+            "img": "https://picsum.photos/200/300",
+            "id": 5
+        },
+        {
+            "name": "Fazer",
+            "img": "https://picsum.photos/200/300",
+            "id": 6
+        }
+    ]
+}
