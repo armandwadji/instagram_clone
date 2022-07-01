@@ -1,14 +1,17 @@
 import React from "react";
 import { View } from "react-native";
+import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
-import ProfilePicture from "../../components/profilePicture/ProfilePicture";
-import Story from "../../components/storys/Story";
+import Posts from "../../components/posts/Posts";
+import Stories from "../../components/stories/Stories";
 
 const HomeScreen = () => {
   return (
     <View>
       <Header />
-      <Story />
+      <Stories />
+      <Posts />
+      {/* <Footer /> */}
     </View>
   );
 };

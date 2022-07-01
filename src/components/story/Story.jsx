@@ -1,19 +1,15 @@
 import { Image, Text, View } from "react-native";
 import React from "react";
-import styles from "./ProfilePictureStyle";
+import styles from "./StoryStyle";
 import Feather from "react-native-vector-icons/Feather";
+import ProfilPicture from "../profilPicture/ProfilPicture";
 
-const ProfilePicture = ({ user }) => {
+const Story = ({ user }) => {
   return (
     <View style={styles.story}>
       <View
         style={!user.admin ? styles.img_container : styles.img_container_admin}>
-        <Image
-          source={{
-            uri: `${user.img}`,
-          }}
-          style={styles.img}
-        />
+        <ProfilPicture img={user.img} />
         {user.admin && (
           <View style={styles.icon}>
             <Feather name={"plus-circle"} size={15} color={"white"} />
@@ -25,4 +21,4 @@ const ProfilePicture = ({ user }) => {
   );
 };
 
-export default ProfilePicture;
+export default Story;
