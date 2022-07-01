@@ -1,6 +1,7 @@
-import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
 import React from "react";
 import styles from "./ProfilePictureStyle";
+import Feather from "react-native-vector-icons/Feather";
 
 const ProfilePicture = ({ user }) => {
   return (
@@ -13,6 +14,11 @@ const ProfilePicture = ({ user }) => {
           }}
           style={styles.img}
         />
+        {user.admin && (
+          <View style={styles.icon}>
+            <Feather name={"plus-circle"} size={15} color={"white"} />
+          </View>
+        )}
       </View>
       <Text style={styles.name}>{user.admin ? "Votre story" : user.name}</Text>
     </View>

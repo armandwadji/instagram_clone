@@ -30,6 +30,14 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderColor: "grey",
     marginHorizontal: 5,
+    position: "relative",
+  },
+  icon: {
+    position: "absolute",
+    bottom: 5,
+    right: 0,
+    borderRadius: 100,
+    backgroundColor: "teal",
   },
   img: {
     height: 60,
