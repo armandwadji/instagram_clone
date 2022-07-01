@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native";
 import { StatusBar } from "react-native-web";
 import HomeScreen from "./src/pages/home/HomeScreen";
 

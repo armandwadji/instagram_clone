@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   icons: {
-    // backgroundColor: "red",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
