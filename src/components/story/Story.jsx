@@ -1,20 +1,25 @@
-import { Image, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import React from "react";
 import styles from "./StoryStyle";
 import Feather from "react-native-vector-icons/Feather";
 import ProfilPicture from "../profilPicture/ProfilPicture";
 
-const Story = ({ user, size = 60, footer }) => {
+const Story = ({ user, size = 60, footer, post }) => {
   return (
-    <View style={styles.story}>
+    <View style={[styles.story, post && { flexDirection: "row" }]}>
       <View
         style={[
-          !user.admin ? styles.img_container : styles.img_container_admin,
-          { height: size + 5, width: size + 5 },
+          styles.img_container,
+          user.admin && {
+            borderColor: "grey",
+            borderWidth: 1.5,
+            position: "relative",
+          },
           footer && { borderColor: "white" },
+          { height: size + 5, width: size + 5 },
         ]}>
         <ProfilPicture img={user.img} size={size} footer={footer} />
-        {user.admin && (
+        {user.admin && !post && (
           <View style={styles.icon}>
             <Feather name={"plus-circle"} size={15} color={"white"} />
           </View>
@@ -23,7 +28,7 @@ const Story = ({ user, size = 60, footer }) => {
       {!footer && (
         <>
           <Text style={styles.name}>
-            {user.admin ? "Votre story" : user.name}
+            {user.admin && !post ? "Votre story" : user.name}
           </Text>
         </>
       )}
