@@ -2,7 +2,10 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    marginHorizontal: 5,
+    // backgroundColor: "yellow",
+    width: "100%",
+    // height: "20%",
+    marginTop: 5,
     paddingTop: 8,
     borderBottomWidth: 0.2,
     borderColor: "grey",

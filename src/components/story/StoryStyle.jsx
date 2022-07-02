@@ -39,13 +39,6 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     backgroundColor: "teal",
   },
-  img: {
-    height: 60,
-    width: 60,
-    borderRadius: 100,
-    borderWidth: 2,
-    borderColor: "white",
-  },
   name: {
     marginVertical: 5,
     fontSize: 10,
