@@ -2,8 +2,15 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    // backgroundColor: "blue",
-    height: "5%",
+    backgroundColor: "white",
+    position: "absolute",
+    bottom: 30,
+    height: 100,
+    width: "100%",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    paddingVertical: 10,
   },
 });
 
