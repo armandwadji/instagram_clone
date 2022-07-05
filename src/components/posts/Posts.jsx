@@ -29,11 +29,13 @@ const Posts = () => {
               </View>
             </View>
             <View style={styles.footer}>
-              <Text>{user.likes} j'aime</Text>
-              <Text>
+              <Text style={styles.likes}>
+                {user.likes} j'aime{user.likes > 1 && "s"}
+              </Text>
+              <Text style={styles.desc}>
                 {user.name} - {user.desc}
               </Text>
-              <Text>il y'a {"times"} heure</Text>
+              <Text style={styles.postAt}>il y'a {"times"} heure</Text>
             </View>
           </View>
         );

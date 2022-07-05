@@ -44,6 +44,16 @@ const styles = StyleSheet.create({
   footer: {
     marginHorizontal: 10,
   },
+  likes: {
+    fontWeight: "bold",
+    marginBottom: 5,
+  },
+  desc: {
+    marginBottom: 5,
+  },
+  postAt: {
+    opacity: 0.5,
+  },
 });
 
 export default styles;
