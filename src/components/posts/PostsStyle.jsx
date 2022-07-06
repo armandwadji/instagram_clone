@@ -14,13 +14,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginHorizontal: 10,
+    paddingRight: 15,
   },
   name: {
     paddingLeft: 10,
   },
   body: {
-    // backgroundColor: "blue",
     marginVertical: 5,
   },
   img_body: {
@@ -39,7 +38,8 @@ const styles = StyleSheet.create({
     width: "25%",
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
+    marginLeft: 2,
   },
   footer: {
     marginHorizontal: 10,
@@ -50,6 +50,10 @@ const styles = StyleSheet.create({
   },
   desc: {
     marginBottom: 5,
+  },
+  plus: {
+    opacity: 0.5,
+    marginHorizontal: 10,
   },
   postAt: {
     opacity: 0.5,

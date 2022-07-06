@@ -14,7 +14,13 @@ const Header = () => {
       <View style={styles.icons}>
         <Feather name={"plus-square"} size={25} />
         <FontAwesome5 name={"heart"} size={25} />
-        <Feather name={"send"} size={25} />
+        <Feather
+          name={"send"}
+          size={25}
+          style={{
+            transform: [{ rotateZ: "20deg" }],
+          }}
+        />
       </View>
     </View>
   );
