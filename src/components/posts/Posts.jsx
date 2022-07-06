@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableWithoutFeedback } from "react-native";
 import React, { useState } from "react";
 import styles from "./PostsStyle";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
@@ -13,11 +13,13 @@ const Posts = ({ user }) => {
   const [isLike, setIsLike] = useState(false);
   const [descLength, setDesclength] = useState(true);
 
+  //Méthode pour le state like
   const handleLike = () => {
     setIsLike(!isLike);
     incrementLike();
   };
 
+  //Méthode pour l'incrementation et la décrémentation des likes
   const incrementLike = () => {
     if (!isLike) {
       Users.map((item) => {
@@ -30,6 +32,7 @@ const Posts = ({ user }) => {
     }
   };
 
+  //Méthode pour le paragraphe de description
   const showDescription = () => {
     setDesclength(!descLength);
   };
@@ -46,16 +49,18 @@ const Posts = ({ user }) => {
           <Image source={{ uri: user.item.img }} style={styles.img_body} />
           <View style={styles.icons}>
             <View style={styles.left}>
-              {isLike ? (
-                <AntDesign
-                  name={"heart"}
-                  size={25}
-                  color={"red"}
-                  onPress={handleLike}
-                />
-              ) : (
-                <AntDesign name={"hearto"} size={25} onPress={handleLike} />
-              )}
+              <TouchableWithoutFeedback>
+                {isLike ? (
+                  <AntDesign
+                    name={"heart"}
+                    size={25}
+                    color={"red"}
+                    onPress={handleLike}
+                  />
+                ) : (
+                  <AntDesign name={"hearto"} size={25} onPress={handleLike} />
+                )}
+              </TouchableWithoutFeedback>
 
               <FontAwesome name={"comment-o"} size={25} />
 
