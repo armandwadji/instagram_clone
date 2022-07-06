@@ -5,7 +5,7 @@ const Users = [
     id: 1,
     admin: true,
     likes: Math.round(Math.random() * 1000),
-    desc: "Lorem Ipsum is simply dummy text",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
   },
   {
     name: "Ophelie",
@@ -13,7 +13,7 @@ const Users = [
     id: 2,
     admin: false,
     likes: Math.round(Math.random() * 1000),
-    desc: "Lorem Ipsum is simply dummy text",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
   },
   {
     name: "Giulia",
@@ -21,7 +21,7 @@ const Users = [
     id: 3,
     admin: false,
     likes: Math.round(Math.random() * 1000),
-    desc: "Lorem Ipsum is simply dummy text",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
   },
   {
     name: "Manou",
@@ -29,7 +29,7 @@ const Users = [
     id: 4,
     admin: false,
     likes: Math.round(Math.random() * 1000),
-    desc: "Lorem Ipsum is simply dummy text",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
   },
   {
     name: "Lass",
@@ -37,7 +37,7 @@ const Users = [
     id: 5,
     admin: false,
     likes: Math.round(Math.random() * 1000),
-    desc: "Lorem Ipsum is simply dummy text",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
   },
   {
     name: "Fazer",
@@ -45,7 +45,7 @@ const Users = [
     id: 6,
     admin: false,
     likes: Math.round(Math.random() * 1000),
-    desc: "Lorem Ipsum is simply dummy text",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
   },
   {
     name: "Nelson",
@@ -53,7 +53,7 @@ const Users = [
     id: 7,
     admin: false,
     likes: Math.round(Math.random() * 1000),
-    desc: "Lorem Ipsum is simply dummy text",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
   },
   {
     name: "Raiiari",
@@ -61,7 +61,7 @@ const Users = [
     id: 8,
     admin: false,
     likes: Math.round(Math.random() * 1000),
-    desc: "Lorem Ipsum is simply dummy text",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
   },
   {
     name: "Zondjay",
@@ -69,7 +69,7 @@ const Users = [
     id: 9,
     admin: false,
     likes: Math.round(Math.random() * 1000),
-    desc: "Lorem Ipsum is simply dummy text",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
   },
 ];
 

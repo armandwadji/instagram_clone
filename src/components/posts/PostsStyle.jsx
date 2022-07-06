@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
   },
   body: {
-    // backgroundColor: "blue",
     marginVertical: 5,
   },
   img_body: {
@@ -51,6 +50,10 @@ const styles = StyleSheet.create({
   },
   desc: {
     marginBottom: 5,
+  },
+  plus: {
+    opacity: 0.5,
+    marginHorizontal: 10,
   },
   postAt: {
     opacity: 0.5,
