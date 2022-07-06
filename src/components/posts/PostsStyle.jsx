@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginHorizontal: 10,
+    paddingRight: 15,
   },
   name: {
     paddingLeft: 10,
@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
     width: "25%",
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
+    marginLeft: 2,
   },
   footer: {
     marginHorizontal: 10,

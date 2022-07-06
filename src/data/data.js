@@ -4,7 +4,7 @@ const Users = [
     img: "https://picsum.photos/500/800",
     id: 1,
     admin: true,
-    likes: 1234,
+    likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text",
   },
   {
@@ -12,7 +12,7 @@ const Users = [
     img: "https://picsum.photos/500/800",
     id: 2,
     admin: false,
-    likes: 1234,
+    likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text",
   },
   {
@@ -20,7 +20,7 @@ const Users = [
     img: "https://picsum.photos/500/800",
     id: 3,
     admin: false,
-    likes: 1234,
+    likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text",
   },
   {
@@ -28,7 +28,7 @@ const Users = [
     img: "https://picsum.photos/500/800",
     id: 4,
     admin: false,
-    likes: 1234,
+    likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text",
   },
   {
@@ -36,7 +36,7 @@ const Users = [
     img: "https://picsum.photos/500/800",
     id: 5,
     admin: false,
-    likes: 1234,
+    likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text",
   },
   {
@@ -44,7 +44,7 @@ const Users = [
     img: "https://picsum.photos/500/800",
     id: 6,
     admin: false,
-    likes: 1234,
+    likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text",
   },
   {
@@ -52,7 +52,7 @@ const Users = [
     img: "https://picsum.photos/500/800",
     id: 7,
     admin: false,
-    likes: 1234,
+    likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text",
   },
   {
@@ -60,7 +60,7 @@ const Users = [
     img: "https://picsum.photos/500/800",
     id: 8,
     admin: false,
-    likes: 1234,
+    likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text",
   },
   {
@@ -68,7 +68,7 @@ const Users = [
     img: "https://picsum.photos/500/800",
     id: 9,
     admin: false,
-    likes: 1234,
+    likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text",
   },
 ];
