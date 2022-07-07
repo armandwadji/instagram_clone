@@ -8,7 +8,9 @@
 
 <div align="center" >
 <img width="400" alt="instagram clone homepage image" src="https://user-images.githubusercontent.com/90448006/177749946-a6f345c3-2189-4eb2-a2af-cff966421f20.png">
+  <img width="400" alt="instagram clone homepage image" src="https://user-images.githubusercontent.com/90448006/177756809-9a220581-2c3e-4d6a-8934-2049707dee0e.png">
 </div> 
+
 
 
 
