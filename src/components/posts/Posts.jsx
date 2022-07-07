@@ -96,7 +96,7 @@ const Posts = ({ user }) => {
               </Text>
             )}
           </Text>
-          <Text style={styles.postAt}>il y'a {"times"} heure</Text>
+          <Text style={styles.postAt}>il y'a {"6"} minutes</Text>
         </View>
       </View>
     </>

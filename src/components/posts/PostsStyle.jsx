@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
   img_body: {
     width: Dimensions.get("window").width,
     height: Dimensions.get("window").width,
+    resizeMode: "cover",
   },
   icons: {
     display: "flex",
@@ -34,7 +35,6 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   left: {
-    // backgroundColor: "red",
     width: "25%",
     display: "flex",
     flexDirection: "row",

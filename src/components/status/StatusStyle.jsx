@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
@@ -28,21 +28,17 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    // backgroundColor: "white",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     marginHorizontal: 30,
     zIndex: 10,
-    // marginRight: 20,
-    // paddingRight: 50,
   },
 
   left: {},
 
   rigth: {
-    // backgroundColor: "black",
     width: 80,
     display: "flex",
     flexDirection: "row",
@@ -53,8 +49,8 @@ const styles = StyleSheet.create({
   },
 
   imageProfil: {
-    width: "100%",
-    height: "100%",
+    width: Dimensions.get("window").width,
+    height: Dimensions.get("window").height,
     resizeMode: "cover",
     position: "absolute",
   },
