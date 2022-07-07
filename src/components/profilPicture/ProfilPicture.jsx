@@ -2,7 +2,7 @@ import { View, Text, Image } from "react-native";
 import React from "react";
 import styles from "./ProfilPictureStyle";
 
-const ProfilPicture = ({ img, size = 60, footer }) => {
+const ProfilPicture = ({ img, size = 60, footerLink }) => {
   return (
     <Image
       source={{
@@ -11,7 +11,7 @@ const ProfilPicture = ({ img, size = 60, footer }) => {
       style={[
         styles.img,
         { width: size, height: size },
-        footer && { borderColor: "black" },
+        footerLink && { borderColor: "black" },
       ]}
     />
   );
