@@ -1,10 +1,4 @@
-import {
-  View,
-  Text,
-  Image,
-  TouchableWithoutFeedback,
-  TouchableOpacity,
-} from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import styles from "./PostsStyle";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
@@ -58,15 +52,13 @@ const Posts = ({ user }) => {
           <Image source={{ uri: user.item.img }} style={styles.img_body} />
           <View style={styles.icons}>
             <View style={styles.left}>
-              {isLike ? (
-                <TouchableOpacity onPress={handleLike}>
-                  <AntDesign name={"heart"} size={25} color={"red"} />
-                </TouchableOpacity>
-              ) : (
-                <TouchableOpacity onPress={handleLike}>
-                  <AntDesign name={"hearto"} size={25} onPress={handleLike} />
-                </TouchableOpacity>
-              )}
+              <TouchableOpacity onPress={handleLike}>
+                <AntDesign
+                  name={isLike ? "heart" : "hearto"}
+                  size={25}
+                  color={isLike ? "red" : "black"}
+                />
+              </TouchableOpacity>
 
               <TouchableOpacity>
                 <FontAwesome name={"comment-o"} size={25} />

@@ -7,9 +7,8 @@ import {
   TouchableOpacity,
   TextInput,
   Animated,
-  ProgressBarAndroidBase,
 } from "react-native";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./StatusStyle";
 
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
@@ -18,21 +17,32 @@ import Feather from "react-native-vector-icons/Feather";
 
 const Status = ({ route, navigation }) => {
   const { name, img } = route.params;
-  let progress = 50;
+
+  //Random images stories
+  const [Img, setImg] = useState(img);
 
   useEffect(() => {
     let timer = setTimeout(() => {
-      //   navigation.goBack();
+      navigation.goBack();
     }, 5000);
 
     Animated.timing(progress, {
       toValue: 5,
       duration: 5000,
       useNativeDriver: false,
-    }).start;
+    }).start();
 
-    return clearTimeout(timer);
-  }, [progress]);
+    setImg("https://picsum.photos/600/900");
+
+    return () => clearTimeout(timer);
+  }, [name]);
+
+  const progress = useRef(new Animated.Value(0)).current;
+
+  const progressAnimation = progress.interpolate({
+    inputRange: [0, 5],
+    outputRange: ["0%", "100%"],
+  });
 
   return (
     <SafeAreaView backgroundColor='black'>
@@ -46,7 +56,7 @@ const Status = ({ route, navigation }) => {
           <Animated.View
             style={[
               styles.storybar_content,
-              { width: ProgressBarAndroidBase },
+              { width: progressAnimation },
             ]}></Animated.View>
         </View>
 
@@ -70,7 +80,7 @@ const Status = ({ route, navigation }) => {
                 alignItems: "center",
               }}>
               <Image
-                source={{ uri: img }}
+                source={{ uri: Math.random() > 0.5 ? Img : img }}
                 style={{
                   borderRadius: 100,
                   backgroundColor: "orange",
@@ -107,7 +117,10 @@ const Status = ({ route, navigation }) => {
           </View>
         </View>
 
-        <Image style={styles.imageProfil} source={{ uri: img }} />
+        <Image
+          style={styles.imageProfil}
+          source={{ uri: Math.random() > 0.5 ? Img : img }}
+        />
 
         <View style={styles.footer}>
           <TextInput

@@ -37,15 +37,13 @@ export default function App() {
           tabBarIcon: ({ focused, colour }) => {
             if (route.name === "Home") {
               if (focused) {
-                return <Entypo name={"home"} size={35} color={colour} />;
+                return <Entypo name={"home"} size={35} />;
               } else {
-                return (
-                  <Feather name={"home"} size={35} backgroundColor={"white"} />
-                );
+                return <Feather name={"home"} size={35} />;
               }
             } else if (route.name === "Search") {
               if (!focused) {
-                return <Feather name={"search"} size={35} color={colour} />;
+                return <Feather name={"search"} size={35} />;
               } else {
                 return <FontAwesome name={"search"} size={35} />;
               }
