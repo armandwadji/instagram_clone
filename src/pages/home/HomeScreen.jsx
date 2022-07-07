@@ -1,6 +1,5 @@
 import React from "react";
 import { FlatList, SafeAreaView, StatusBar, View } from "react-native";
-import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import Posts from "../../components/posts/Posts";
 import Stories from "../../components/stories/Stories";
@@ -19,7 +18,6 @@ const HomeScreen = () => {
           showsVerticalScrollIndicator={false}
           ListHeaderComponent={Stories}
         />
-        {/* <Footer /> */}
       </View>
     </SafeAreaView>
   );
