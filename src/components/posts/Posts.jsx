@@ -1,4 +1,10 @@
-import { View, Text, Image, TouchableWithoutFeedback } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  TouchableWithoutFeedback,
+  TouchableOpacity,
+} from "react-native";
 import React, { useState } from "react";
 import styles from "./PostsStyle";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
@@ -42,38 +48,44 @@ const Posts = ({ user }) => {
       <View style={styles.container} key={user.item.id}>
         <View style={styles.header}>
           <Story user={user.item} size={30} post={true} />
-          <FontAwesome5 name={"ellipsis-h"} size={15} />
+
+          <TouchableOpacity>
+            <FontAwesome5 name={"ellipsis-h"} size={15} />
+          </TouchableOpacity>
         </View>
 
         <View style={styles.body}>
           <Image source={{ uri: user.item.img }} style={styles.img_body} />
           <View style={styles.icons}>
             <View style={styles.left}>
-              <TouchableWithoutFeedback>
-                {isLike ? (
-                  <AntDesign
-                    name={"heart"}
-                    size={25}
-                    color={"red"}
-                    onPress={handleLike}
-                  />
-                ) : (
+              {isLike ? (
+                <TouchableOpacity onPress={handleLike}>
+                  <AntDesign name={"heart"} size={25} color={"red"} />
+                </TouchableOpacity>
+              ) : (
+                <TouchableOpacity onPress={handleLike}>
                   <AntDesign name={"hearto"} size={25} onPress={handleLike} />
-                )}
-              </TouchableWithoutFeedback>
+                </TouchableOpacity>
+              )}
 
-              <FontAwesome name={"comment-o"} size={25} />
+              <TouchableOpacity>
+                <FontAwesome name={"comment-o"} size={25} />
+              </TouchableOpacity>
 
-              <Feather
-                name={"send"}
-                size={25}
-                style={{
-                  transform: [{ rotateZ: "20deg" }],
-                }}
-              />
+              <TouchableOpacity>
+                <Feather
+                  name={"send"}
+                  size={25}
+                  style={{
+                    transform: [{ rotateZ: "20deg" }],
+                  }}
+                />
+              </TouchableOpacity>
             </View>
 
-            <Feather name={"bookmark"} size={25} />
+            <TouchableOpacity>
+              <Feather name={"bookmark"} size={25} />
+            </TouchableOpacity>
           </View>
         </View>
 

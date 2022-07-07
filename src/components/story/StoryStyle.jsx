@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     position: "absolute",
-    bottom: 5,
+    bottom: 0,
     right: 0,
     borderRadius: 100,
     backgroundColor: "teal",
