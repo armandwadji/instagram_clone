@@ -7,8 +7,10 @@
 </div> 
 
 <div align="center" >
-<img width="350" alt="Capture d’écran 2022-07-03 à 00 41 35" src="https://user-images.githubusercontent.com/90448006/177018050-3e30a524-755b-4189-b244-ba45b397bb3b.png">
+<img width="400" alt="instagram clone homepage image" src="https://user-images.githubusercontent.com/90448006/177749946-a6f345c3-2189-4eb2-a2af-cff966421f20.png">
 </div> 
+
+
 
 ## Configuration requise
 
