@@ -21,6 +21,9 @@ const Status = ({ route, navigation }) => {
   //Random images stories
   const [Img, setImg] = useState(img);
 
+  //Variable pour l'animation de la progress bar de la storie
+  const progress = useRef(new Animated.Value(0)).current;
+
   useEffect(() => {
     let timer = setTimeout(() => {
       navigation.goBack();
@@ -37,8 +40,7 @@ const Status = ({ route, navigation }) => {
     return () => clearTimeout(timer);
   }, [name]);
 
-  const progress = useRef(new Animated.Value(0)).current;
-
+  //Animation de la progress bar
   const progressAnimation = progress.interpolate({
     inputRange: [0, 5],
     outputRange: ["0%", "100%"],
