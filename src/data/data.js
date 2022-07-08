@@ -6,6 +6,7 @@ const Users = [
     admin: true,
     likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    datePost: new Date(2020, 6, 8, 14, 0, 0),
   },
   {
     name: "Ophelie",
@@ -14,6 +15,7 @@ const Users = [
     admin: false,
     likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    datePost: new Date(2022, 6, 6, 14, 0, 0),
   },
   {
     name: "Giulia",
@@ -22,6 +24,7 @@ const Users = [
     admin: false,
     likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    datePost: new Date(2022, 6, 1, 14, 0, 0),
   },
   {
     name: "Manou",
@@ -30,6 +33,7 @@ const Users = [
     admin: false,
     likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    datePost: new Date(2022, 5, 7, 14, 0, 0),
   },
   {
     name: "Lass",
@@ -38,6 +42,7 @@ const Users = [
     admin: false,
     likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    datePost: new Date(2022, 4, 7, 14, 0, 0),
   },
   {
     name: "Fazer",
@@ -46,6 +51,7 @@ const Users = [
     admin: false,
     likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    datePost: new Date(2022, 3, 7, 14, 0, 0),
   },
   {
     name: "Nelson",
@@ -54,6 +60,7 @@ const Users = [
     admin: false,
     likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    datePost: new Date(2022, 5, 2, 14, 0, 0),
   },
   {
     name: "Raiiari",
@@ -62,6 +69,7 @@ const Users = [
     admin: false,
     likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    datePost: new Date(2021, 10, 12, 14, 0, 0),
   },
   {
     name: "Zondjay",
@@ -70,6 +78,7 @@ const Users = [
     admin: false,
     likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    datePost: new Date(2021, 11, 12, 14, 0, 0),
   },
   {
     name: "Benji",
@@ -78,6 +87,7 @@ const Users = [
     admin: false,
     likes: Math.round(Math.random() * 1000),
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    datePost: new Date(2020, 10, 12, 14, 0, 0),
   },
 ];
 
