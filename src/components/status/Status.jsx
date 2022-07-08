@@ -63,39 +63,15 @@ const Status = ({ route, navigation }) => {
         </View>
 
         <View style={styles.header}>
-          <View
-            style={[
-              styles.left,
-              {
-                padding: 15,
-                flexDirection: "row",
-                alignItems: "center",
-                width: "100%",
-              },
-            ]}>
-            <View
-              style={{
-                borderRadius: 100,
-                width: 50,
-                height: 50,
-                justifyContent: "center",
-                alignItems: "center",
-              }}>
+          <View style={styles.left}>
+            <View style={styles.imgContainer}>
               <Image
                 source={{ uri: Math.random() > 0.5 ? Img : img }}
-                style={{
-                  borderRadius: 100,
-                  backgroundColor: "orange",
-                  resizeMode: "cover",
-                  width: "92%",
-                  height: "92%",
-                }}
+                style={styles.img}
               />
             </View>
 
-            <Text style={{ color: "white", fontSize: 15, marginLeft: 10 }}>
-              {name}
-            </Text>
+            <Text style={styles.name}>{name}</Text>
           </View>
 
           <View style={styles.rigth}>

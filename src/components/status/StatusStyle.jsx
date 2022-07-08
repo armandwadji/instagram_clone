@@ -36,7 +36,28 @@ const styles = StyleSheet.create({
     zIndex: 10,
   },
 
-  left: {},
+  left: {
+    padding: 15,
+    flexDirection: "row",
+    alignItems: "center",
+    width: "100%",
+  },
+
+  imgContainer: {
+    borderRadius: 100,
+    width: 50,
+    height: 50,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  img: {
+    borderRadius: 100,
+    backgroundColor: "orange",
+    resizeMode: "cover",
+    width: "92%",
+    height: "92%",
+  },
 
   rigth: {
     width: 80,
@@ -53,6 +74,12 @@ const styles = StyleSheet.create({
     height: Dimensions.get("window").height,
     resizeMode: "cover",
     position: "absolute",
+  },
+
+  name: {
+    color: "white",
+    fontSize: 15,
+    marginLeft: 10,
   },
 
   footer: {
