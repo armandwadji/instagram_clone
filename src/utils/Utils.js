@@ -45,12 +45,12 @@ export const timestampPost = (date) => {
   //On stocke le temp converti dans un tableau d'objets (utile pour l'ordre d'itération)
 
   const times = [
-    { year },
-    { months },
-    { day },
-    { hour },
-    { minutes },
-    { secondes },
+    { annee: year },
+    { mois: months },
+    { jour: day },
+    { heure: hour },
+    { minute: minutes },
+    { seconde: secondes },
   ];
 
   //On initialise la valeur retourné
