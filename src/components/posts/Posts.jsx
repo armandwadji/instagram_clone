@@ -7,7 +7,7 @@ import Feather from "react-native-vector-icons/Feather";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Story from "../story/Story";
 import Users from "../../data/data";
-import { truncateText } from "../../utils/Utils";
+import { truncateText, timestampPost } from "../../utils/Utils";
 
 const Posts = ({ user }) => {
   const [isLike, setIsLike] = useState(false);
@@ -96,7 +96,12 @@ const Posts = ({ user }) => {
               </Text>
             )}
           </Text>
-          <Text style={styles.postAt}>il y'a {"6"} minutes</Text>
+          <Text style={styles.postAt}>
+            il y'a {timestampPost(user.item.datePost)}
+            {timestampPost(user.item.datePost).split(" ")[0] > 1 &&
+              timestampPost(user.item.datePost).split(" ")[1] !== "mois" &&
+              "s"}
+          </Text>
         </View>
       </View>
     </>
