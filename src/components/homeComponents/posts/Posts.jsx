@@ -5,9 +5,9 @@ import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Feather from "react-native-vector-icons/Feather";
 import AntDesign from "react-native-vector-icons/AntDesign";
-import Story from "../story/Story";
-import Users from "../../data/data";
-import { truncateText, timestampPost } from "../../utils/Utils";
+import Story from "../../homeComponents/story/Story";
+import Users from "../../../data/data";
+import { truncateText, timestampPost } from "../../../utils/Utils";
 
 const Posts = ({ user }) => {
   const [isLike, setIsLike] = useState(false);

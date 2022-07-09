@@ -2,7 +2,7 @@ import { Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import styles from "./StoryStyle";
 import Feather from "react-native-vector-icons/Feather";
-import ProfilPicture from "../profilPicture/ProfilPicture";
+import ProfilPicture from "../../profilPicture/ProfilPicture";
 import { useNavigation } from "@react-navigation/native";
 
 const Story = ({ user, size = 60, footer, post, footerLink }) => {

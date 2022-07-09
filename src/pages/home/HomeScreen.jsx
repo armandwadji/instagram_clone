@@ -1,8 +1,8 @@
 import React from "react";
 import { FlatList, SafeAreaView, StatusBar, View } from "react-native";
-import Header from "../../components/header/Header";
-import Posts from "../../components/posts/Posts";
-import Stories from "../../components/stories/Stories";
+import Header from "../../components/homeComponents/header/Header";
+import Posts from "../../components/homeComponents/posts/Posts";
+import Stories from "../../components/homeComponents/stories/Stories";
 import Users from "../../data/data";
 
 const HomeScreen = () => {

@@ -13,7 +13,7 @@ import Entypo from "react-native-vector-icons/Entypo";
 import Feather from "react-native-vector-icons/Feather";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Octicons from "react-native-vector-icons/Octicons";
-import Story from "../components/story/Story";
+import Story from "../components/homeComponents/story/Story";
 import Users from "../data/data";
 
 const BottomTabScreen = () => {
