@@ -18,7 +18,7 @@ export const timestampPost = (date) => {
 
   //On calcule les années
   let year = Math.floor(t / YEAR);
-  let reste = t % (3600 * 1000 * 24 * 365);
+  let reste = t % YEAR;
 
   //On calcule les mois
   let months = Math.floor(reste / MONTH);
