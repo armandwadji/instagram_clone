@@ -1,15 +1,9 @@
-import {
-  View,
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  Image,
-  Text,
-} from "react-native";
+import { View, SafeAreaView, ScrollView } from "react-native";
 import React, { useState } from "react";
 import styles from "./SearchStyle";
 import SearchBox from "../../components/screenComponents/searchBox/SearchBox";
 import SearchContent from "../../components/screenComponents/searchContent/SearchContent";
+import Modal from "../../components/screenComponents/modal/Modal";
 
 const Search = () => {
   const [image, setImage] = useState(null);
@@ -24,19 +18,7 @@ const Search = () => {
           <SearchBox />
           <SearchContent getData={getData} />
         </ScrollView>
-        {image && (
-          <View style={styles.modalContainer}>
-            <StatusBar backgroundColor='#525252' barStyle='dark-content' />
-            <View style={styles.modal}>
-              <View style={styles.modalHeader}>
-                <Image source={{ uri: image }} style={styles.imageHeader} />
-
-                <Text style={styles.nameHeader}>Nom de l'utilisateur</Text>
-              </View>
-              <Image source={{ uri: image }} style={styles.bodyHeader}></Image>
-            </View>
-          </View>
-        )}
+        {image && <Modal image={image} />}
       </View>
     </SafeAreaView>
   );
