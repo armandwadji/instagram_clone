@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <View style={styles.container}>
       <Image
-        source={require("../../assets/img/Instagram_logo.svg.png")}
+        source={require("../../../assets/img/Instagram_logo.svg.png")}
         style={styles.logo}
       />
       <View style={styles.icons}>
