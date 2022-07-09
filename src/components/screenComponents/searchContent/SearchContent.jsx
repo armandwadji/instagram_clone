@@ -17,7 +17,8 @@ const SearchContent = ({ getData }) => {
                       key={imgIndex}
                       style={styles.imgContainer}
                       onPressIn={() => getData(img)}
-                      onPressOut={() => getData(null)}>
+                      onPressOut={() => getData(null)}
+                      delayPressIn='500'>
                       <Image source={{ uri: img }} style={styles.img} />
                     </TouchableOpacity>
                   );
@@ -44,7 +45,8 @@ const SearchContent = ({ getData }) => {
                         key={imgIndex}
                         style={styles.imgContainer}
                         onPressIn={() => getData(img)}
-                        onPressOut={() => getData(null)}>
+                        onPressOut={() => getData(null)}
+                        delayPressIn='500'>
                         <Image source={{ uri: img }} style={styles.img} />
                       </TouchableOpacity>
                     );
@@ -53,7 +55,8 @@ const SearchContent = ({ getData }) => {
                 <TouchableOpacity
                   style={{ marginHorizontal: 5 }}
                   onPressIn={() => getData(data.images[5])}
-                  onPressOut={() => getData(null)}>
+                  onPressOut={() => getData(null)}
+                  delayPressIn='500'>
                   <Image
                     source={{ uri: data.images[5] }}
                     style={{
@@ -73,7 +76,8 @@ const SearchContent = ({ getData }) => {
                       key={imgIndex}
                       style={styles.imgContainer}
                       onPressIn={() => getData(img)}
-                      onPressOut={() => getData(null)}>
+                      onPressOut={() => getData(null)}
+                      delayPressIn='500'>
                       <Image source={{ uri: img }} style={styles.img} />
                     </TouchableOpacity>
                   );
