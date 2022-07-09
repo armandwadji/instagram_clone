@@ -11,8 +11,10 @@
   <img width="400" alt="instagram clone homepage image" src="https://user-images.githubusercontent.com/90448006/177756809-9a220581-2c3e-4d6a-8934-2049707dee0e.png">
 </div> 
 
-
-
+<div align="center" >
+<img width="400" alt="instagram clone homepage image" src="https://user-images.githubusercontent.com/90448006/178119439-ebc14313-b9ce-4ef4-9c6b-6e8ae7b1007c.png">
+  <img width="400" alt="instagram clone homepage image" src="https://user-images.githubusercontent.com/90448006/178119458-17dd05ab-8532-45f7-80e9-7a68c57f5db7.png">
+</div> 
 
 ## Configuration requise
 
