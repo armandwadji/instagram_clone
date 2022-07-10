@@ -7,15 +7,14 @@
 </div> 
 
 <div align="center" >
-<img width="400" alt="instagram clone homepage image" src="https://user-images.githubusercontent.com/90448006/177749946-a6f345c3-2189-4eb2-a2af-cff966421f20.png">
-  <img width="400" alt="instagram clone homepage image" src="https://user-images.githubusercontent.com/90448006/177756809-9a220581-2c3e-4d6a-8934-2049707dee0e.png">
+<img width="400" alt="instagram clone homeScreen image" src="https://user-images.githubusercontent.com/90448006/177749946-a6f345c3-2189-4eb2-a2af-cff966421f20.png">
+  <img width="400" alt="instagram clone statusComponent image" src="https://user-images.githubusercontent.com/90448006/177756809-9a220581-2c3e-4d6a-8934-2049707dee0e.png">
 </div> 
 
 <div align="center" >
-<img width="400" alt="instagram clone homepage image" src="https://user-images.githubusercontent.com/90448006/178134077-ec84d5a8-2a61-49e1-83e4-a39f24fa796e.png">
-  <img width="400" alt="instagram clone homepage image" src="https://user-images.githubusercontent.com/90448006/178119458-17dd05ab-8532-45f7-80e9-7a68c57f5db7.png">
+<img width="400" alt="instagram clone searchScreen image" src="https://user-images.githubusercontent.com/90448006/178134077-ec84d5a8-2a61-49e1-83e4-a39f24fa796e.png">
+  <img width="400" alt="instagram clone modalComponent image" src="https://user-images.githubusercontent.com/90448006/178134155-a5d8a0fe-63b9-46da-beed-8218b2a6fb85.png">
 </div> 
-
 
 ## Configuration requise
 
