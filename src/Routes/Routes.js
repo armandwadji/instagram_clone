@@ -13,8 +13,8 @@ import Entypo from "react-native-vector-icons/Entypo";
 import Feather from "react-native-vector-icons/Feather";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Octicons from "react-native-vector-icons/Octicons";
-import Story from "../components/homeComponents/story/Story";
 import Users from "../data/data";
+import ProfilPicture from "../components/profilPicture/ProfilPicture";
 
 const BottomTabScreen = () => {
   const Tab = createBottomTabNavigator();
@@ -55,11 +55,13 @@ const BottomTabScreen = () => {
             }
           } else if (route.name === "Profile") {
             if (!focused) {
-              return <Story user={Users[1]} size={35} footer={true} />;
+              return (
+                <ProfilPicture img={Users[0].img} size={35} footer={true} />
+              );
             } else {
               return (
-                <Story
-                  user={Users[0]}
+                <ProfilPicture
+                  img={Users[0].img}
                   size={35}
                   footer={true}
                   footerLink={true}
