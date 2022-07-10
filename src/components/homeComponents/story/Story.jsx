@@ -25,10 +25,9 @@ const Story = ({ user, size = 60, footer, post, footerLink }) => {
               borderWidth: 1.5,
               position: "relative",
             },
-            footer && { borderColor: "white" },
             { height: size + 5, width: size + 5 },
           ]}>
-          <ProfilPicture img={user.img} size={size} footerLink={footerLink} />
+          <ProfilPicture img={user.img} size={size} />
           {user.admin && !post && (
             <View style={styles.icon}>
               <Feather name={"plus-circle"} size={20} color={"white"} />

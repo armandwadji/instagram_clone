@@ -60,7 +60,7 @@ const SearchContent = ({ getData }) => {
                   <Image
                     source={{ uri: data.images[5] }}
                     style={{
-                      width: Dimensions.get("window").width / 2.5,
+                      width: Dimensions.get("window").width / 3.2,
                       height: Dimensions.get("window").height / 2.9,
                     }}
                   />
@@ -69,6 +69,65 @@ const SearchContent = ({ getData }) => {
             )}
             {/*  */}
             {data.id === 2 && (
+              <View style={styles.dataContainer}>
+                {data.images.map((img, imgIndex) => {
+                  return (
+                    <TouchableOpacity
+                      key={imgIndex}
+                      style={styles.imgContainer}
+                      onPressIn={() => getData(img)}
+                      onPressOut={() => getData(null)}
+                      delayPressIn='500'>
+                      <Image source={{ uri: img }} style={styles.img} />
+                    </TouchableOpacity>
+                  );
+                })}
+              </View>
+            )}
+            {/*  */}
+            {data.id === 1 && (
+              <View
+                style={{
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}>
+                <TouchableOpacity
+                  style={{ marginHorizontal: 5 }}
+                  onPressIn={() => getData(data.images[5])}
+                  onPressOut={() => getData(null)}
+                  delayPressIn='500'>
+                  <Image
+                    source={{ uri: data.images[5] }}
+                    style={{
+                      width: Dimensions.get("window").width / 3.2,
+                      height: Dimensions.get("window").height / 2.9,
+                    }}
+                  />
+                </TouchableOpacity>
+                <View
+                  style={{
+                    flexDirection: "row",
+                    flexWrap: "wrap",
+                    justifyContent: "space-between",
+                    width: Dimensions.get("window").width / 1.5,
+                  }}>
+                  {data.images.slice(0, 4).map((img, imgIndex) => {
+                    return (
+                      <TouchableOpacity
+                        key={imgIndex}
+                        style={styles.imgContainer}
+                        onPressIn={() => getData(img)}
+                        onPressOut={() => getData(null)}
+                        delayPressIn='500'>
+                        <Image source={{ uri: img }} style={styles.img} />
+                      </TouchableOpacity>
+                    );
+                  })}
+                </View>
+              </View>
+            )}
+            {/*  */}
+            {data.id === 0 && (
               <View style={styles.dataContainer}>
                 {data.images.map((img, imgIndex) => {
                   return (
