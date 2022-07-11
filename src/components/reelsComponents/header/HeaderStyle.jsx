@@ -6,7 +6,7 @@ const windowHeight = Dimensions.get("window").height;
 const styles = StyleSheet.create({
   headerContainer: {
     position: "absolute",
-    top: 0,
+    top: 40,
     left: 0,
     right: 0,
     display: "flex",
