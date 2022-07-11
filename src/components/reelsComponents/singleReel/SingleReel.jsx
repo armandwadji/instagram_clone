@@ -33,11 +33,9 @@ const SingleReel = ({ item, index, currentIndex }) => {
           resizeMode='cover'
           isLooping={true}
           useNativeControls={false}
-          // paused={currentIndex == index ? false : true}
           repeat={true}
           onBuffer={onBuffer}
           onError={onError}
-          onLoadStart
           shouldPlay={currentIndex == index ? true : false}
           style={{
             width: "100%",
