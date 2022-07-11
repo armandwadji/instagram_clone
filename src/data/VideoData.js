@@ -55,4 +55,13 @@ export const videoData = [
     comment: Math.round(Math.random() * 100),
     isLike: false,
   },
+  {
+    id: 6,
+    video: require("../videos/video7.mp4"),
+    title: "Rockstar",
+    description: "Music is everything",
+    likes: (Math.random() * 1000).toFixed(2).split(".").join(","),
+    comment: Math.round(Math.random() * 100),
+    isLike: false,
+  },
 ];

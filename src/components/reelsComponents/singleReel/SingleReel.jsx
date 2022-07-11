@@ -1,5 +1,5 @@
 import { View, Text, Dimensions, TouchableOpacity } from "react-native";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Video } from "expo-av";
 import { useIsFocused } from "@react-navigation/native";
 import AntDesign from "react-native-vector-icons/AntDesign";
@@ -14,6 +14,7 @@ export const windowWidth = Dimensions.get("window").width;
 export const windowHeight = Dimensions.get("screen").height;
 
 const SingleReel = ({ item, index, currentIndex }) => {
+  //Méthodes obligatoire pour les paramètres de la balise video
   const videoRef = useRef(null);
 
   const onBuffer = (buffer) => {
@@ -25,6 +26,12 @@ const SingleReel = ({ item, index, currentIndex }) => {
 
   //Variable permettan de vérifier que nous somme bien focus sur la fenetre reel
   const isFocused = useIsFocused();
+
+  //Méthode pour le like des différents posts
+  const [isLike, setIsLike] = useState(false);
+  const handleLike = () => {
+    setIsLike(!isLike);
+  };
 
   return (
     <View style={[styles.singleReelsContainer]}>
@@ -71,11 +78,11 @@ const SingleReel = ({ item, index, currentIndex }) => {
           {/* Rigth Component */}
           <View style={styles.right}>
             <View style={styles.likesContainer}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={handleLike}>
                 <AntDesign
-                  name={!item.isLike ? "hearto" : "heart"}
+                  name={!isLike ? "hearto" : "heart"}
                   size={25}
-                  color={!item.isLike ? "white" : "red"}
+                  color={!isLike ? "white" : "red"}
                 />
               </TouchableOpacity>
               <Text style={styles.likesCount}>{item.likes} K</Text>
