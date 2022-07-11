@@ -17,7 +17,7 @@
 </div> 
 
 <div >
-<video src="https://user-images.githubusercontent.com/90448006/178372025-73712718-3d96-4752-bd0b-30e7f780fe33.mov" width="200" autoplay="true"/>
+<video src="https://user-images.githubusercontent.com/90448006/178372025-73712718-3d96-4752-bd0b-30e7f780fe33.mov" width="200" autoplay/>
 </div>
 
 
