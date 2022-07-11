@@ -4,8 +4,8 @@ export const videoData = [
   {
     id: 0,
     video: require("../videos/video1.mp4"),
-    title: "ophive fitness",
-    description: "fitness is very good for your mindset",
+    title: "Bad boy",
+    description: "Come take the fun with the biker Gang",
     likes: (Math.random() * 1000).toFixed(2).split(".").join(","),
     comment: Math.round(Math.random() * 100),
     isLike: false,
@@ -49,8 +49,8 @@ export const videoData = [
   {
     id: 5,
     video: require("../videos/video6.mp4"),
-    title: "Bad boy",
-    description: "Come take the fun with the biker Gang",
+    title: "ophive fitness",
+    description: "fitness is very good for your mindset",
     likes: (Math.random() * 1000).toFixed(2).split(".").join(","),
     comment: Math.round(Math.random() * 100),
     isLike: false,
