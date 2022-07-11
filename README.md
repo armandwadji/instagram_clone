@@ -16,11 +16,6 @@
   <img width="400" alt="instagram clone modalComponent image" src="https://user-images.githubusercontent.com/90448006/178134155-a5d8a0fe-63b9-46da-beed-8218b2a6fb85.png">
 </div> 
 
-<div >
-<video src="https://user-images.githubusercontent.com/90448006/178372025-73712718-3d96-4752-bd0b-30e7f780fe33.mov" width="200" autoplay/>
-</div>
-
-
 ## Configuration requise
 
 - [git][git]
