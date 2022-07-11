@@ -7,6 +7,7 @@ import SingleReel from "../singleReel/SingleReel";
 const Videos = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  //Méthode qui permet d'actualisé l'index du scroll dans le but de lire uniquementla vidéo correspondant a l'index courant
   const handleChangeIndexValue = ({ index }) => {
     setCurrentIndex(index);
   };
