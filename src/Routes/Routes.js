@@ -25,7 +25,7 @@ const BottomTabScreen = () => {
         tabBarShowLabel: false,
         headerShown: false,
         tabBarStyle: {
-          height: 70,
+          height: "8%",
         },
 
         tabBarIcon: ({ focused, colour }) => {

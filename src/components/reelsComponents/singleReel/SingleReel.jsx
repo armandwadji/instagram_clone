@@ -14,6 +14,7 @@ const SingleReel = ({ item, index, currentIndex }) => {
   const onError = (error) => {
     console.log("error : ", error);
   };
+
   return (
     <View
       style={{
