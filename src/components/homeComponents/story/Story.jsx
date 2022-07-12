@@ -5,7 +5,7 @@ import Feather from "react-native-vector-icons/Feather";
 import ProfilPicture from "../../profilPicture/ProfilPicture";
 import { useNavigation } from "@react-navigation/native";
 
-const Story = ({ user, size = 60, footer, post, footerLink }) => {
+const Story = ({ user, size = 60, footer, post }) => {
   const navigation = useNavigation();
 
   return (

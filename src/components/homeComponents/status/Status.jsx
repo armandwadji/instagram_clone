@@ -47,13 +47,9 @@ const Status = ({ route, navigation }) => {
   });
 
   return (
-    <SafeAreaView backgroundColor='black'>
+    <>
       <View style={styles.container}>
-        <StatusBar
-          backgroundColor='black'
-          barStyle={"light-content"}
-          animated={true}
-        />
+        <StatusBar barStyle={"light-content"} />
         <View style={styles.storybar}>
           <Animated.View
             style={[
@@ -124,7 +120,7 @@ const Status = ({ route, navigation }) => {
           </View>
         </View>
       </View>
-    </SafeAreaView>
+    </>
   );
 };
 

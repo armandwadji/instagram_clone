@@ -5,7 +5,7 @@ const Shopping = () => {
   return (
     <SafeAreaView>
       <View>
-        <Text>Messenger</Text>
+        <Text>Market</Text>
       </View>
     </SafeAreaView>
   );
