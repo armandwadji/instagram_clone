@@ -24,8 +24,12 @@
 - [Android Studio][androidstudio]
 
 ## Installation
-Après avoir installé les configurations du projet, vous pouvez executer cette commande pour installer le projet en local sur votre machine :
+Pour commencer de manière simple, vous devez installer expo CLI de manière global sur votre PC et e tant qu'administrateur
+```
+npm install -g expo-cli
+```
 
+Après avoir installé les configurations du projet ainsi que expo-cli, vous pouvez executer cette commande pour installer le projet en local sur votre machine :
 ```
 git clone https://github.com/armandwadji/instagram_clone.git
 ```
