@@ -25,27 +25,10 @@ const ProfilInfos = () => {
           </View>
         </View>
       </View>
-      <View
-        style={[
-          styles.description,
-          {
-            // backgroundColor: "green",
-            width: "70%",
-            paddingHorizontal: 10,
-            marginVertical: 5,
-          },
-        ]}>
+      <View style={[styles.description]}>
         <Text>SHAKI</Text>
         <Text>Application developer </Text>
-        <Text
-          style={[
-            styles.webSite,
-            {
-              color: "blue",
-            },
-          ]}>
-          armandwadji.netlify.app
-        </Text>
+        <Text style={[styles.webSite]}>armandwadji.netlify.app</Text>
       </View>
     </>
   );
@@ -86,5 +69,14 @@ const styles = StyleSheet.create({
   followsTitle: {
     fontSize: 13,
     textTransform: "capitalize",
+  },
+  description: {
+    // backgroundColor: "green",
+    // width: "70%",
+    paddingHorizontal: 10,
+    marginVertical: 5,
+  },
+  webSite: {
+    color: "blue",
   },
 });
