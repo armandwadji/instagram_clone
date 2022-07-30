@@ -16,12 +16,15 @@ const HeaderProfil = () => {
           paddingHorizontal: 10,
         },
       ]}>
-      <View
+      <TouchableOpacity
         style={[
           styles.nameContainer,
           {
             // backgroundColor: "green",
             flex: 2.25,
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
           },
         ]}>
         <Text
@@ -34,7 +37,8 @@ const HeaderProfil = () => {
           ]}>
           Shaki_retouch
         </Text>
-      </View>
+        <Feather name={"chevron-down"} size={15} />
+      </TouchableOpacity>
       <View
         style={[
           styles.icons,
@@ -44,13 +48,14 @@ const HeaderProfil = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-around",
+            alignItems: "center",
           },
         ]}>
         <TouchableOpacity>
           <Feather name={"plus-square"} size={30} />
         </TouchableOpacity>
         <TouchableOpacity>
-          <Ionicons name={"menu-outline"} size={30} />
+          <Ionicons name={"menu-outline"} size={35} />
         </TouchableOpacity>
       </View>
     </View>

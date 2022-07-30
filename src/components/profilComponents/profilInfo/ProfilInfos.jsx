@@ -1,11 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import ProfilPicture from "../../profilPicture/ProfilPicture";
 import Users from "../../../data/data";
+import AntDesign from "react-native-vector-icons/AntDesign";
 
 const ProfilInfos = () => {
   return (
     <>
+      {/* Infos profils */}
       <View style={[styles.profilInfoContainer]}>
         <View style={[styles.profilPicture]}>
           <ProfilPicture img={Users.at(0).img} size={100} />
@@ -25,10 +27,65 @@ const ProfilInfos = () => {
           </View>
         </View>
       </View>
+      {/* Description profil */}
       <View style={[styles.description]}>
         <Text>SHAKI</Text>
         <Text>Application developer </Text>
         <Text style={[styles.webSite]}>armandwadji.netlify.app</Text>
+      </View>
+      {/* Edit profil */}
+      <View
+        style={[
+          styles.editProfilContainer,
+          {
+            // backgroundColor: "red",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            paddingHorizontal: 10,
+            marginVertical: 5,
+          },
+        ]}>
+        <TouchableOpacity
+          style={[
+            styles.editProfil,
+            {
+              flex: 3.5,
+              borderWidth: 1,
+              // borderColor: "#DEDEDE",
+              borderRadius: 5,
+            },
+          ]}>
+          <Text
+            style={[
+              styles.editProfilText,
+              {
+                textAlign: "center",
+                padding: 2,
+                letterSpacing: 1,
+                opacity: 0.8,
+              },
+            ]}>
+            Modifier le profil
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={[
+            styles.editProfilIcon,
+            {
+              flex: 0.2,
+              borderWidth: 1,
+              // borderColor: "#DEDEDE",
+              display: "flex",
+              alignItems: "center",
+              marginLeft: 5,
+              padding: 2,
+              borderRadius: 5,
+              opacity: 0.8,
+            },
+          ]}>
+          <AntDesign name='adduser' size={15} />
+        </TouchableOpacity>
       </View>
     </>
   );
