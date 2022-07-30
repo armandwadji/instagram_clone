@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     color: COLORS.white,
   },
   webSite: {
-    color: "blue",
+    color: "turquoise",
   },
   editProfilContainer: {
     // backgroundColor: "red",

@@ -11,6 +11,7 @@ const Posts = () => {
       <View key={index}>
         <Image
           source={{ uri: "https://picsum.photos/500/800" }}
+          resizeMode={"cover"}
           style={{
             width: windowWidth / 3.015,
             height: 150,
