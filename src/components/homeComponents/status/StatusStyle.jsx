@@ -3,7 +3,7 @@ import { COLORS, windowHeight, windowWidth } from "../../../utils/Utils";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "black",
+    backgroundColor: COLORS.black,
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
