@@ -10,9 +10,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   logo: {
-    height: 35,
-    width: 110,
-    marginLeft: 10,
+    height: 50,
+    width: 150,
+    marginLeft: -10,
   },
   icons: {
     display: "flex",

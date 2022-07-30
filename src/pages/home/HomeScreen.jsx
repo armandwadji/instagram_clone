@@ -4,12 +4,16 @@ import Header from "../../components/homeComponents/header/Header";
 import Posts from "../../components/homeComponents/posts/Posts";
 import Stories from "../../components/homeComponents/stories/Stories";
 import Users from "../../data/data";
+import { COLORS } from "../../utils/Utils";
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView
+      style={{
+        backgroundColor: COLORS.black,
+      }}>
       <View style={{ position: "relative" }}>
-        <StatusBar barStyle={"dark-content"} animated={true} />
+        <StatusBar barStyle={"light-content"} animated={true} />
         <Header />
         <FlatList
           data={Users}
