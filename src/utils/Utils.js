@@ -1,3 +1,5 @@
+import { Dimensions } from "react-native";
+
 //Méthode pour afficher la description sur 150 lettres
 export const truncateText = (string, n) => {
   return string?.length > n ? `${string.substr(0, n)} ...` : string;
@@ -70,3 +72,13 @@ export const timestampPost = (date) => {
 
   return returnValue;
 };
+
+const { width: windowWidth, height: windowHeight } = Dimensions.get("window");
+
+const COLORS = {
+  white: "#FFFFFF",
+  black: "#000000",
+  background: "#ffffff2f",
+};
+
+export { windowWidth, windowHeight, COLORS };

@@ -3,6 +3,7 @@ import React from "react";
 import ProfilPicture from "../../profilPicture/ProfilPicture";
 import Users from "../../../data/data";
 import AntDesign from "react-native-vector-icons/AntDesign";
+import { COLORS } from "../../../utils/Utils";
 
 const ProfilInfos = () => {
   return (
@@ -29,62 +30,19 @@ const ProfilInfos = () => {
       </View>
       {/* Description profil */}
       <View style={[styles.description]}>
-        <Text>SHAKI</Text>
-        <Text>Application developer </Text>
+        <Text style={[styles.descInf]}>SHAKI</Text>
+        <Text style={[styles.descInf]}>Application developer </Text>
         <Text style={[styles.webSite]}>armandwadji.netlify.app</Text>
       </View>
       {/* Edit profil */}
-      <View
-        style={[
-          styles.editProfilContainer,
-          {
-            // backgroundColor: "red",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            paddingHorizontal: 10,
-            marginVertical: 5,
-          },
-        ]}>
-        <TouchableOpacity
-          style={[
-            styles.editProfil,
-            {
-              flex: 3.5,
-              borderWidth: 1,
-              // borderColor: "#DEDEDE",
-              borderRadius: 5,
-            },
-          ]}>
-          <Text
-            style={[
-              styles.editProfilText,
-              {
-                textAlign: "center",
-                padding: 2,
-                letterSpacing: 1,
-                opacity: 0.8,
-              },
-            ]}>
+      <View style={[styles.editProfilContainer]}>
+        <TouchableOpacity style={[styles.editProfil]}>
+          <Text style={[styles.editProfilText, { color: "white" }]}>
             Modifier le profil
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={[
-            styles.editProfilIcon,
-            {
-              flex: 0.2,
-              borderWidth: 1,
-              // borderColor: "#DEDEDE",
-              display: "flex",
-              alignItems: "center",
-              marginLeft: 5,
-              padding: 2,
-              borderRadius: 5,
-              opacity: 0.8,
-            },
-          ]}>
-          <AntDesign name='adduser' size={15} />
+        <TouchableOpacity style={[styles.editProfilIcon]}>
+          <AntDesign name='adduser' size={15} color={COLORS.white} />
         </TouchableOpacity>
       </View>
     </>
@@ -122,10 +80,12 @@ const styles = StyleSheet.create({
   followsNumber: {
     fontSize: 15,
     fontWeight: "600",
+    color: COLORS.white,
   },
   followsTitle: {
     fontSize: 13,
     textTransform: "capitalize",
+    color: COLORS.white,
   },
   description: {
     // backgroundColor: "green",
@@ -133,7 +93,42 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     marginVertical: 5,
   },
+  descInf: {
+    color: COLORS.white,
+  },
   webSite: {
     color: "blue",
+  },
+  editProfilContainer: {
+    // backgroundColor: "red",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 10,
+    marginVertical: 5,
+  },
+  editProfil: {
+    flex: 3.5,
+    borderWidth: 1,
+    backgroundColor: COLORS.background,
+    borderRadius: 5,
+  },
+  editProfilText: {
+    color: COLORS.white,
+    textAlign: "center",
+    padding: 2,
+    letterSpacing: 1,
+    // opacity: 0.8,
+  },
+  editProfilIcon: {
+    flex: 0.2,
+    borderWidth: 1,
+    backgroundColor: COLORS.background,
+    display: "flex",
+    alignItems: "center",
+    marginLeft: 5,
+    padding: 2,
+    borderRadius: 5,
+    // opacity: 0.2,
   },
 });

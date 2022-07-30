@@ -2,6 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import Feather from "react-native-vector-icons/Feather";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import { COLORS } from "../../../utils/Utils";
 
 const HeaderProfil = () => {
   return (
@@ -33,11 +34,12 @@ const HeaderProfil = () => {
             {
               fontSize: 20,
               fontWeight: "bold",
+              color: COLORS.white,
             },
           ]}>
           Shaki_retouch
         </Text>
-        <Feather name={"chevron-down"} size={15} />
+        <Feather name={"chevron-down"} size={15} color={COLORS.white} />
       </TouchableOpacity>
       <View
         style={[
@@ -52,10 +54,10 @@ const HeaderProfil = () => {
           },
         ]}>
         <TouchableOpacity>
-          <Feather name={"plus-square"} size={30} />
+          <Feather name={"plus-square"} size={30} color={COLORS.white} />
         </TouchableOpacity>
         <TouchableOpacity>
-          <Ionicons name={"menu-outline"} size={35} />
+          <Ionicons name={"menu-outline"} size={35} color={COLORS.white} />
         </TouchableOpacity>
       </View>
     </View>
