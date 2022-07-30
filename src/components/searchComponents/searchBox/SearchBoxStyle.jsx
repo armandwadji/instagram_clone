@@ -1,28 +1,28 @@
 import { StyleSheet } from "react-native";
+import { COLORS } from "../../../utils/Utils";
 
 const styles = StyleSheet.create({
   header: {
-    //   backgroundColor: "red",
+    // backgroundColor: "red",
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    paddingVertical: 10,
+    marginBottom: 5,
     marginLeft: "auto",
     position: "relative",
   },
   textInput: {
-    backgroundColor: "#ebebebee",
-    width: "90%",
-    paddingVertical: 5,
+    backgroundColor: COLORS.background,
+    width: "95%",
+    paddingVertical: 8,
     borderRadius: 10,
-    paddingLeft: 40,
-    color: "black",
+    paddingLeft: 50,
     fontSize: 20,
   },
   icon: {
     position: "absolute",
     left: "8%",
-    opacity: 0.3,
+    opacity: 0.2,
   },
 });
 

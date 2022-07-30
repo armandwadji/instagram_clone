@@ -15,6 +15,7 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Octicons from "react-native-vector-icons/Octicons";
 import Users from "../data/data";
 import ProfilPicture from "../components/profilPicture/ProfilPicture";
+import { COLORS } from "../utils/Utils";
 
 const BottomTabScreen = () => {
   const Tab = createBottomTabNavigator();
@@ -26,32 +27,43 @@ const BottomTabScreen = () => {
         headerShown: false,
         tabBarStyle: {
           height: "8%",
+          backgroundColor: COLORS.black,
         },
 
         tabBarIcon: ({ focused, colour }) => {
           if (route.name === "Home") {
             if (focused) {
-              return <Entypo name={"home"} size={35} />;
+              return <Entypo name={"home"} size={35} color={COLORS.white} />;
             } else {
-              return <Feather name={"home"} size={35} />;
+              return <Feather name={"home"} size={35} color={COLORS.white} />;
             }
           } else if (route.name === "Search") {
             if (!focused) {
-              return <Feather name={"search"} size={35} />;
+              return <Feather name={"search"} size={35} color={COLORS.white} />;
             } else {
-              return <FontAwesome name={"search"} size={35} />;
+              return (
+                <FontAwesome name={"search"} size={35} color={COLORS.white} />
+              );
             }
           } else if (route.name === "Reels") {
             if (!focused) {
-              return <Octicons name={"video"} size={35} />;
+              return <Octicons name={"video"} size={35} color={COLORS.white} />;
             } else {
-              return <Entypo name={"video"} size={35} />;
+              return <Entypo name={"video"} size={35} color={COLORS.white} />;
             }
           } else if (route.name === "Shopping") {
             if (!focused) {
-              return <Feather name={"shopping-bag"} size={35} />;
+              return (
+                <Feather name={"shopping-bag"} size={35} color={COLORS.white} />
+              );
             } else {
-              return <FontAwesome name={"shopping-bag"} size={35} />;
+              return (
+                <FontAwesome
+                  name={"shopping-bag"}
+                  size={35}
+                  color={COLORS.white}
+                />
+              );
             }
           } else if (route.name === "Profile") {
             if (!focused) {

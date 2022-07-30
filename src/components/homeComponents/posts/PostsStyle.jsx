@@ -1,4 +1,5 @@
 import { Dimensions, StyleSheet } from "react-native";
+import { COLORS } from "../../../utils/Utils";
 
 const styles = StyleSheet.create({
   post: {
@@ -47,9 +48,11 @@ const styles = StyleSheet.create({
   likes: {
     fontWeight: "bold",
     marginBottom: 5,
+    color: COLORS.white,
   },
   desc: {
     marginBottom: 5,
+    color: COLORS.white,
   },
   plus: {
     opacity: 0.5,
@@ -57,6 +60,8 @@ const styles = StyleSheet.create({
   },
   postAt: {
     opacity: 0.5,
+    color: COLORS.white,
+    marginBottom: 10,
   },
 });
 

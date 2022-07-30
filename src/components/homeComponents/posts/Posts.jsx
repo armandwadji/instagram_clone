@@ -7,7 +7,7 @@ import Feather from "react-native-vector-icons/Feather";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Story from "../../homeComponents/story/Story";
 import Users from "../../../data/data";
-import { truncateText, timestampPost } from "../../../utils/Utils";
+import { truncateText, timestampPost, COLORS } from "../../../utils/Utils";
 
 const Posts = ({ user }) => {
   const [isLike, setIsLike] = useState(false);
@@ -44,7 +44,7 @@ const Posts = ({ user }) => {
           <Story user={user.item} size={30} post={true} />
 
           <TouchableOpacity>
-            <FontAwesome5 name={"ellipsis-h"} size={15} />
+            <FontAwesome5 name={"ellipsis-h"} size={15} color={COLORS.white} />
           </TouchableOpacity>
         </View>
 
@@ -56,18 +56,23 @@ const Posts = ({ user }) => {
                 <AntDesign
                   name={isLike ? "heart" : "hearto"}
                   size={25}
-                  color={isLike ? "red" : "black"}
+                  color={isLike ? "red" : COLORS.white}
                 />
               </TouchableOpacity>
 
               <TouchableOpacity>
-                <FontAwesome name={"comment-o"} size={25} />
+                <FontAwesome
+                  name={"comment-o"}
+                  size={25}
+                  color={COLORS.white}
+                />
               </TouchableOpacity>
 
               <TouchableOpacity>
                 <Feather
                   name={"send"}
                   size={25}
+                  color={COLORS.white}
                   style={{
                     transform: [{ rotateZ: "20deg" }],
                   }}
@@ -76,7 +81,7 @@ const Posts = ({ user }) => {
             </View>
 
             <TouchableOpacity>
-              <Feather name={"bookmark"} size={25} />
+              <Feather name={"bookmark"} size={25} color={COLORS.white} />
             </TouchableOpacity>
           </View>
         </View>
