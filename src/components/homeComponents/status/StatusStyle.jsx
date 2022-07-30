@@ -1,4 +1,5 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
+import { COLORS, windowHeight, windowWidth } from "../../../utils/Utils";
 
 const styles = StyleSheet.create({
   container: {
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
 
   storybar_content: {
     height: "100%",
-    backgroundColor: "white",
+    backgroundColor: COLORS.white,
     width: "50%",
     zIndex: 10,
   },
@@ -70,8 +71,8 @@ const styles = StyleSheet.create({
   },
 
   imageProfil: {
-    width: Dimensions.get("window").width,
-    height: Dimensions.get("window").height,
+    width: windowWidth,
+    height: windowHeight,
     resizeMode: "cover",
     position: "absolute",
   },
@@ -94,14 +95,14 @@ const styles = StyleSheet.create({
   },
 
   message: {
-    borderColor: "white",
+    borderColor: COLORS.white,
     borderRadius: 25,
     width: "70%",
     height: 40,
     borderWidth: 1,
     paddingLeft: 20,
     marginLeft: 5,
-    color: "white",
+    color: COLORS.white,
   },
 
   icons: {

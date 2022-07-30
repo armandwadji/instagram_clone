@@ -14,6 +14,7 @@ import styles from "./StatusStyle";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Feather from "react-native-vector-icons/Feather";
+import { COLORS } from "../../../utils/Utils";
 
 const Status = ({ route, navigation }) => {
   const { name, img } = route.params;
@@ -75,7 +76,7 @@ const Status = ({ route, navigation }) => {
               <FontAwesome5
                 name={"ellipsis-h"}
                 size={20}
-                color='white'
+                color={COLORS.white}
                 style={{ paddingRight: 10 }}
               />
             </TouchableOpacity>
@@ -99,19 +100,19 @@ const Status = ({ route, navigation }) => {
         <View style={styles.footer}>
           <TextInput
             placeholder='Envoyer un message'
-            placeholderTextColor={"white"}
+            placeholderTextColor={COLORS.white}
             style={styles.message}
           />
           <View style={styles.icons}>
             <TouchableOpacity>
-              <FontAwesome5 name={"heart"} size={25} color='white' />
+              <FontAwesome5 name={"heart"} size={25} color={COLORS.white} />
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => navigation.goBack()}>
               <Feather
                 name={"send"}
                 size={25}
-                color='white'
+                color={COLORS.white}
                 style={{
                   transform: [{ rotateZ: "20deg" }],
                 }}
