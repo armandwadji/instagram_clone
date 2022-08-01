@@ -3,20 +3,11 @@ import React from "react";
 import Feather from "react-native-vector-icons/Feather";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { COLORS } from "../../../utils/Utils";
+import styles from "./HeaderProfilStyle";
 
 const HeaderProfil = () => {
   return (
-    <View
-      style={[
-        styles.headerContainer,
-        {
-          // backgroundColor: "red",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          paddingHorizontal: 10,
-        },
-      ]}>
+    <View style={[styles.headerContainer]}>
       <TouchableOpacity
         style={[
           styles.nameContainer,
@@ -65,5 +56,3 @@ const HeaderProfil = () => {
 };
 
 export default HeaderProfil;
-
-const styles = StyleSheet.create({});

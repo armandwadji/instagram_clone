@@ -1,14 +1,9 @@
-import {
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import React, { useState } from "react";
 import Feather from "react-native-vector-icons/Feather";
 import Entypo from "react-native-vector-icons/Entypo";
 import { COLORS } from "../../../utils/Utils";
+import styles from "./HighlightsStoriesStyle";
 
 const HighlightsStories = () => {
   const [highlightStories, setHighlightStories] = useState(true);
@@ -20,59 +15,18 @@ const HighlightsStories = () => {
     circles.push(
       <TouchableOpacity key={index}>
         {index === 0 ? (
-          <View
-            style={[
-              styles.highlightsStories,
-              {
-                width: 60,
-                height: 60,
-                borderRadius: 100,
-                borderWidth: 1,
-                borderColor: COLORS.white,
-                marginHorizontal: 10,
-                justifyContent: "center",
-                alignItems: "center",
-
-                opacity: 0.7,
-              },
-            ]}>
+          <View style={[styles.highlightsStories]}>
             <Entypo name='plus' size={40} color={COLORS.white} />
           </View>
         ) : (
-          <View
-            style={[
-              styles.highlightsStories,
-              {
-                width: 60,
-                height: 60,
-                borderRadius: 100,
-                borderWidth: 1,
-                borderColor: COLORS.white,
-                marginHorizontal: 8,
-                justifyContent: "center",
-                alignItems: "center",
-                backgroundColor: COLORS.white,
-                opacity: 0.1,
-              },
-            ]}></View>
+          <View style={[styles.highlightsStoriesLists]}></View>
         )}
       </TouchableOpacity>
     );
   }
   return (
     <View>
-      <View
-        style={[
-          styles.highlightsStoriesText,
-          {
-            marginVertical: 10,
-            paddingLeft: 10,
-            paddingRight: 15,
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-          },
-        ]}>
+      <View style={[styles.highlightsStoriesText]}>
         <Text style={{ color: COLORS.white }}>Stories à la une</Text>
         <TouchableOpacity
           onPress={() => setHighlightStories(!highlightStories)}>
@@ -96,5 +50,3 @@ const HighlightsStories = () => {
 };
 
 export default HighlightsStories;
-
-const styles = StyleSheet.create({});
