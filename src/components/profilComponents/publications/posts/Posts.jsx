@@ -41,7 +41,6 @@ const Posts = () => {
             backgroundColor: COLORS.black,
             flexWrap: "wrap",
             flexDirection: "row",
-            // paddingVertical: 5,
             justifyContent: "space-between",
           },
         ]}>
