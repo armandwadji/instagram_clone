@@ -1,6 +1,7 @@
-import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Image, ScrollView, View } from "react-native";
 import React from "react";
-import { COLORS, windowHeight, windowWidth } from "../../../../utils/Utils";
+import { COLORS, windowWidth } from "../../../../utils/Utils";
+import styles from "./TagsStyle";
 
 const Tags = () => {
   let squares = [];
@@ -27,31 +28,10 @@ const Tags = () => {
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}
-      style={[
-        styles.scrollContainer,
-        {
-          width: windowWidth,
-          height: windowHeight,
-        },
-      ]}>
-      <View
-        style={[
-          styles.postsContainer,
-          {
-            width: windowWidth,
-            height: windowHeight,
-            backgroundColor: COLORS.black,
-            flexWrap: "wrap",
-            flexDirection: "row",
-            justifyContent: "space-between",
-          },
-        ]}>
-        {squares}
-      </View>
+      style={[styles.scrollContainer]}>
+      <View style={[styles.postsContainer]}>{squares}</View>
     </ScrollView>
   );
 };
 
 export default Tags;
-
-const styles = StyleSheet.create({});
