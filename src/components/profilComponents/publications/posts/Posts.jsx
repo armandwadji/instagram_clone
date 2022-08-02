@@ -1,6 +1,6 @@
 import { Image, ScrollView, View } from "react-native";
 import React from "react";
-import { COLORS, windowWidth } from "../../../../utils/Utils";
+import { windowWidth } from "../../../../utils/Utils";
 import styles from "./PostsStyle";
 
 const Posts = () => {

@@ -3,13 +3,11 @@ import React from "react";
 import { COLORS, windowWidth } from "../../../../utils/Utils";
 import { videoData } from "../../../../data/VideoData";
 import { Video } from "expo-av";
+import styles from "./VideossStyle";
 
 // Icons
 import Feather from "react-native-vector-icons/Feather";
-
-// Icon
 import FontAwesome from "react-native-vector-icons/FontAwesome";
-import styles from "./VideossStyle";
 
 const Videoss = () => {
   let videos = [];
