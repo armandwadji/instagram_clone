@@ -17,7 +17,7 @@
 </div> 
 
 <div align="center" >
-<img width="400" alt="instagram clone reelScreen image" src="https://user-images.githubusercontent.com/90448006/182002015-9739029b-82a8-4117-bb97-cfc90b11ecdc.png">
+<img width="400" alt="instagram clone reelScreen image" src="https://user-images.githubusercontent.com/90448006/183268603-7a3f64f0-cb4b-4252-8c3b-05a6989618f1.png">
   <img width="400" alt="instagram clone profilComponent image" src="https://user-images.githubusercontent.com/90448006/182002086-28c49ae1-a677-4aca-a7e3-9e27a96a1ba8.png">
 </div> 
 
