@@ -1,15 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import React from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import Posts from "./posts/Posts";
 import Videoss from "./videos/Videoss";
 import Tags from "./tags/Tags";
+import { COLORS } from "../../../utils/Utils";
 
 // Icons
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Octicons from "react-native-vector-icons/Octicons";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
-import { COLORS } from "../../../utils/Utils";
 
 const Publications = () => {
   const Tab = createMaterialTopTabNavigator();

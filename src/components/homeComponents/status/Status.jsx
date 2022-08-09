@@ -1,7 +1,6 @@
 import {
   View,
   Text,
-  SafeAreaView,
   StatusBar,
   Image,
   TouchableOpacity,
@@ -10,11 +9,12 @@ import {
 } from "react-native";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./StatusStyle";
+import { COLORS } from "../../../utils/Utils";
 
+// Icons
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Feather from "react-native-vector-icons/Feather";
-import { COLORS } from "../../../utils/Utils";
 
 const Status = ({ route, navigation }) => {
   const { name, img } = route.params;

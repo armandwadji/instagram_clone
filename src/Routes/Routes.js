@@ -1,5 +1,8 @@
 //Import des tables de navigations
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Users from "../data/data";
+import ProfilPicture from "../components/profilPicture/ProfilPicture";
+import { COLORS } from "../utils/Utils";
 
 //Les differents Screens
 import HomeScreen from "../pages/home/HomeScreen";
@@ -13,9 +16,6 @@ import Entypo from "react-native-vector-icons/Entypo";
 import Feather from "react-native-vector-icons/Feather";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Octicons from "react-native-vector-icons/Octicons";
-import Users from "../data/data";
-import ProfilPicture from "../components/profilPicture/ProfilPicture";
-import { COLORS } from "../utils/Utils";
 
 const BottomTabScreen = () => {
   const Tab = createBottomTabNavigator();

@@ -1,9 +1,11 @@
 import { View, Image } from "react-native";
 import React from "react";
 import styles from "./HeaderStyle";
+import { COLORS } from "../../../utils/Utils";
+
+// Icons
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import Feather from "react-native-vector-icons/Feather";
-import { COLORS } from "../../../utils/Utils";
 
 const Header = () => {
   return (

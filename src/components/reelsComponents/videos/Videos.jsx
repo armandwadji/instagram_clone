@@ -1,4 +1,3 @@
-import { View, Text } from "react-native";
 import React, { useState } from "react";
 import SwiperFlatList from "react-native-swiper-flatlist";
 import { videoData } from "../../../data/VideoData";

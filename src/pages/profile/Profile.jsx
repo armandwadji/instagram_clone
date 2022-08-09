@@ -1,10 +1,4 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  TouchableOpacity,
-  StatusBar,
-} from "react-native";
+import { View, SafeAreaView, StatusBar } from "react-native";
 import React from "react";
 import styles from "./ProfileStyle";
 import HeaderProfil from "../../components/profilComponents/header/HeaderProfil";

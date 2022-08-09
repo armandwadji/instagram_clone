@@ -1,4 +1,4 @@
-import { View, Text, StatusBar } from "react-native";
+import { View, Text } from "react-native";
 import React from "react";
 import styles from "./HeaderStyle";
 import Feather from "react-native-vector-icons/Feather";
