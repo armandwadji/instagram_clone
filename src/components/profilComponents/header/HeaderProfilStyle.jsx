@@ -3,11 +3,12 @@ import { COLORS } from "../../../utils/Utils";
 
 const styles = StyleSheet.create({
   headerContainer: {
-    // backgroundColor: "red",
+    backgroundColor: COLORS.black,
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
     paddingHorizontal: 10,
+    zIndex: 10,
   },
   nameContainer: {
     // backgroundColor: "green",
